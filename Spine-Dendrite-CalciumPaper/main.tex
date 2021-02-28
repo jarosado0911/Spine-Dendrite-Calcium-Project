@@ -99,6 +99,13 @@ The differences in peak [Ca2+] amplitude between passive-SA and no-SA are presen
 We next tested whether changes in calcium entry at the PSD affect the critical RyR density by successively increasing the Ca2+ flux density at the PSD entry site. However, coupling occurs at the same RyR density, independent of the initial Ca2+ influx within the range 8.6e-18--22.0e-18 mol/s.µm2 tested here (Figure 4C-4D). This invariance can be attributed to intracellular Ca2+ buffering, as modifications in the buffering capacity produced a shift in the critical RyR density. This was observed when we ran our simulations with half the buffering capacity, Figure 4E, causing a decrease in the critical RyR density. It is worth pointing out that the transition between coupling and decoupling spine-to-dendrite Ca2+ signals is highly nonlinear (see jumps in Figure 4C-E). With control over critical RyR density appear to have the ability to control all-or-nothing Ca2+ dynamics in the parent dendrite.
 
 Comparing the peak [Ca2+] concentrations of passive and active SA in head and dendrite (see Table 2) shows that the relative differences between passive and active ER dynamics are the result of Ca2+-induced Ca2+ release through RyRs, which releases additional Ca2+ into the cytosol. While the critical RyR density was not dependent on Ca2+ influx at the PSD, we further studied whether the intracellular organization may play a role. 
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{images/figure5.jpg}
+\caption{{\small In figure 5.A we plot the critical RyR density agains the ratio of Spine Apparatus Neck area to Spine Neck area. In Table 1 we show the values that correspond to figure 5.A. In figures 5.C -5.D we demonstrate that widening the neck diameter of a spine affects the coupling of Ca2+ to the dendritic region. In particular figure 5.E indicates that neck widening causes the critical RyR density to increase.}}
+\end{figure}
+
 \subsection*{Spine morphology and neck plasticity affect spine-to-dendrite Ca2+ signaling}Critical for endoplasmic Ca2+ release through RyRs is sufficient [Ca2+] at the endoplasmic membrane (REF). Thus, an intracellular organization of the SA that would support sufficient accumulation of Ca2+ at the spine neck (the most confined part of the spine morphology) should decrease the critical RyR density. To test this hypothesis, the critical RyR density was plotted against the ratio of SA in the spine-neck to spine-neck cross-sectional area (Figure 5A). We found that the area ratio correlated negatively with the RyR density, demonstrating that a smaller RyR density is sufficient to induce spine-to-dendrite coupling when the SA occupies larger portions of the spine neck.
 
 		To highlight this correlation we reference spine 4 (Figure 2A shows that the SA lies tightly at the interface of spine head and neck), which produces a sharp and pronounced release of Ca2+ in the dendritic shaft (Figure 4C). In comparison, spine 5 (Figure 2A shows that the SA forms only a thin tubule from head to dendrite) produces a more gradual Ca2+ change, which can be attributed to the absence of substantial Ca2+ accumulation at the SA membrane.
@@ -151,4 +158,59 @@ For the results we present here, the emerging linearized problems were solved us
 \section*{Acknowledgements}
 
 We thank Sigrun Nestel for excellent technical assistance in transmission electron microscopy. This work was supported by a Collaborative Research in Computational Neuroscience Grant (CRCNS; NIH and BMBF; xxxxxxxxx to GQ, 01GQ1804A to AV).
+\clearpage
+\section*{Tables}
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|}
+    \hline
+        \textbf{Spine No.} & \textbf{RyR Critical Density $[\mu m^{-2}]$} \\ \hline
+        1 & 2.58 \\ 
+        2 &2.99 \\ 
+        3 &2.9 \\ 
+        4&2.03 \\ 
+        5&3.13 \\ 
+        6&2.6 \\ 
+        6A&2.64 \\ 
+        6B&2.66 \\ 
+        6C&2.67 \\ 
+        7&1.37 \\ 
+        8&3.5 \\ 
+        9&2.09 \\ \hline
+    \end{tabular}
+    \caption{}
+\end{table}
+
+
+\begin{table}[h!]
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+\textbf{\begin{tabular}[c]{@{}c@{}}Spine\\  No.\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Head - passive\\  peak {[}Ca2+{]} µmol/l\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Head - active\\  peak {[}Ca2+{]} µmol/l\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}\% Head\\  increase\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Dendrite - passive\\  peak {[}Ca2+{]} µmol/l\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Dendrite - active \\ peak {[}Ca2+{]} µmol/l\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}\% Dendrite \\ increase\end{tabular}} \\ \hline
+1                                                             & 33.85                                                                                     & 44                                                                                       & 30\%                                                                 & 0.08                                                                                          & 1.64                                                                                         & 1950\%                                                                   \\
+2                                                             & 6.22                                                                                      & 9.66                                                                                     & 55\%                                                                 & 0.07                                                                                          & 1.89                                                                                         & 2600\%                                                                   \\
+3                                                             & 4.09                                                                                      & 11.47                                                                                    & 180\%                                                                & 0.07                                                                                          & 1.85                                                                                         & 2543\%                                                                   \\
+4                                                             & 8.8                                                                                       & 24.82                                                                                    & 180\%                                                                & 0.11                                                                                          & 1.06                                                                                         & 864\%                                                                    \\
+5                                                             & 3.16                                                                                      & 10.22                                                                                    & 223\%                                                                & 0.07                                                                                          & 1.7                                                                                          & 2329\%                                                                   \\
+6                                                             & 2.86                                                                                      & 6.47                                                                                     & 126\%                                                                & 0.07                                                                                          & 1.62                                                                                         & 2214\%                                                                   \\
+7                                                             & 4.6                                                                                       & 17.09                                                                                    & 270\%                                                                & 0.14                                                                                          & 1.01                                                                                         & 621\%                                                                    \\
+8                                                             & 3.62                                                                                      & 8.11                                                                                     & 124\%                                                                & 0.07                                                                                          & 0.88                                                                                         & 115\%                                                                    \\
+9                                                             & 5.29                                                                                      & 7.2                                                                                      & 36\%                                                                 & 0.12                                                                                          & 1.05                                                                                         & 775\%                                                                   \\ \hline
+\end{tabular}
+\caption{}
+\end{table}
+
+\clearpage
+\section*{Supplemental Figures}
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=0.9\textwidth]{images/figure6.jpg}
+\caption{{\small All plots in figure 4 were generated with PSD adjusted calcium influx. In row A, these are the calcium concentration profiles in the head and dendrite region with SERCA pumps off and at critical RyR density. In row B, these calcium concentration profiles correspond to sub-critical RyR density. In row C, these are the calcium concentration profiles at critical RyR density with SERCA pumps on. In row C, when SERCA pumps are activated we observe oscillations in the some of the calcium concentration profiles}}
+\end{figure}
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=0.9\textwidth]{images/figure7.jpg}
+\caption{{\small Figure 7: Effects of passive spine SA on spine-to-dendrite Ca2+ signaling, with PSD adjusted Ca2+ influx.  Plots A1-A3 (without  SA) and B1-B3 (with SA) show Ca2+ profiles for 10 ms initial Ca2+ release into the spine head.  Consistent with experimental data, spine-to-dendrite Ca2+ signaling does not occur for all 9 simulated spines. Presence of a passive SA, i.e., no Ryanodine or IP3 receptors, has no major effect on Ca2+ dynamics in the spine head and neck.}}
+\end{figure}
+
 \end{document}
